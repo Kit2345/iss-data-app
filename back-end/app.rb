@@ -25,3 +25,12 @@ get '/astros' do
   content_type :json
   astros.to_json
 end
+
+get '/iss_position.json' do
+  iss_now = OpenNotify.iss_now
+
+  content_type :json
+  iss_now.to_json
+end
+
+

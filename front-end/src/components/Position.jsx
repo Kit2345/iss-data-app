@@ -1,13 +1,16 @@
+import React from "react";
 import { useEffect } from "react";
 
-const Position = () => {
+export default function position() {
   return (
-    <>
-      <h1>Where is the ISS? 🛰️</h1>
-      {/* <!-- TODO add in actual position here -->
-<p>This observation was made at <%= Time.at(data['timestamp']) %>.</p> */}
-    </>
+    <div>
+      <h2>Where is the ISS? 🛰️</h2>
+    </div>
   );
-};
+}
 
-export default Position;
+{
+  /* <h1>Where is the ISS? 🛰️</h1>
+<!-- TODO add in actual position here -->
+<p>This observation was made at <%= Time.at(data['timestamp']) %>.</p> */
+}
