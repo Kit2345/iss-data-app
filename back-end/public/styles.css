@@ -58,7 +58,8 @@ h1 {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-color: #c5c2c2;
 }
 
 .pos {
@@ -82,17 +83,30 @@ h1 {
   flex-direction: column;
 }
 
-.home-button {
+.astros-back-button {
   margin-left: 10vw;
   margin-top: 20px;
 }
 
+.pos-back-button {
+  margin-left: 25vw;
+  margin-top: 20px;
+}
+
 @media (min-width: 1200px) {
-  .home-button {
+  .astros-back-button {
     margin-left: 20vw;
   }
   ul li {
     margin-bottom: 5px;
     margin-left: 15vw;
+  }
+
+  .pos-back-button {
+    margin-left: 30vw;
+  }
+
+  .position-info {
+    width: 40%;
   }
 }
