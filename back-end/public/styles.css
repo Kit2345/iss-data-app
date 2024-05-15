@@ -9,7 +9,7 @@ body {
 table,
 th,
 td {
-  border: 1px solid;
+  border: 1px solid rgb(15, 14, 14);
   padding: 20px;
   text-align: center;
 }
@@ -38,7 +38,9 @@ table {
 /* Home  */
 ul li {
   margin-bottom: 5px;
+  margin-top: 10px;
   margin-left: 5vw;
+  padding-top: 10px;
 }
 
 ul {
