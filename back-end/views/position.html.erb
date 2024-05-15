@@ -1,8 +1,16 @@
-<h1>Where is the ISS? 🛰️</h1>
-<p>Latitude: <%= data['iss_position']['latitude'] %></p>
-<p>Longitutde: <%= data['iss_position']['longitude'] %></p>
-<p>This observation was made at <%= Time.at(data['timestamp']) %>.</p>
 
-<p><a href='/'>Back to Home</a>
+<h1>Where is the ISS? 🛰️</h1>
+<div class="position-info">
+<h3 class="pos">Position:</h3>
+<h3 class="lat">Latitude: <%= data['iss_position']['latitude'] %></h3>
+<h3 class="long">Longitutde: <%= data['iss_position']['longitude'] %></h3>
+</div>
+<p class="time-stamp">This observation was made at <%= Time.at(data['timestamp']) %>.</p>
+
+
+<button class="home-button"> <a href='/'>Back to Home</a> </button>
+
+
+
 
 
