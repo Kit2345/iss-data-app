@@ -27,8 +27,7 @@ get '/iss_position.json' do
 end
 
 get '/astros' do
-  astros = OpenNotify.astros
-
+  astros = OpenNotify.astros  
   erb :astros, locals: { data: astros }
 end
 
@@ -38,7 +37,6 @@ get '/astros.json' do
   content_type :json
   astros.to_json
 end
-
 
 
 

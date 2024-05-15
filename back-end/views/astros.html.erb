@@ -1,5 +1,23 @@
 <h1>Which astronauts are currently in space? 🧑‍🚀</h1>
-<p><%= data['people'][0]['name'] %></p>
+
+
+<table>
+<tr>
+<th> name
+<th> craft
+</tr>
+<% data['people'].each do |person| %>
+  <tr>
+    <td>
+      <%= person['name'] %>
+      </td>
+      <td>
+      <%= person['craft'] %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
 
 <p><a href='/'>Back to Home</a>
 
