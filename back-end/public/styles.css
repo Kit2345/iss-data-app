@@ -1,0 +1,27 @@
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Astros  */
+
+.red {
+  background-color: lightcoral;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.astros-table {
+  margin: auto;
+}
+
+.astros-title {
+  text-align: center;
+}

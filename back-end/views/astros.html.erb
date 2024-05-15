@@ -1,13 +1,14 @@
-<h1>Which astronauts are currently in space? 🧑‍🚀</h1>
+
+<h1 class="astros-title">Which astronauts are currently in space? 🧑‍🚀</h1>
 
 
-<table>
+<table class="astros-table">
 <tr>
 <th> name
 <th> craft
 </tr>
 <% data['people'].each do |person| %>
-  <tr>
+  <tr <%= person['craft'] == 'ISS' ? 'class="blue"' : 'class="red"' %>>
     <td>
       <%= person['name'] %>
       </td>
@@ -18,6 +19,9 @@
 <% end %>
 </table>
 
+<p>
+<button><a href='/'>Back to Home</a></button>
+</p>
 
-<p><a href='/'>Back to Home</a>
+
 
