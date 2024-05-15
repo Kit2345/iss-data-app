@@ -38,7 +38,7 @@ table {
 /* Home  */
 ul li {
   margin-bottom: 5px;
-  margin-left: 10vw;
+  margin-left: 5vw;
 }
 
 ul {
@@ -83,6 +83,15 @@ h1 {
 }
 
 .home-button {
-  margin-left: 20vw;
+  margin-left: 10vw;
   margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .home-button {
+    margin-left: 20vw;
+  }
+  ul li {
+    margin-left: 15vw;
+  }
 }
